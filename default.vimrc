@@ -6,7 +6,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
-Plugin 'wincent/command-t'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-markdown'
@@ -44,3 +44,4 @@ set tabstop=2
 syntax on
 " Tell bad spaces
 :match Error /\s\+$/
+set laststatus=2
