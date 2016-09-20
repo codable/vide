@@ -45,3 +45,6 @@ syntax on
 " Tell bad spaces
 :match Error /\s\+$/
 set laststatus=2
+" CtrlP
+map mo :CtrlP .<CR>
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.o,.*,*.jar,node_modules
