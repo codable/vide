@@ -12,6 +12,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-markdown'
 Plugin 'vim-scripts/php.vim-html-enhanced'
 Plugin 'moll/vim-node'
+Plugin 'roryokane/detectindent'
 Plugin 'tpope/vim-git'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'ntpeters/vim-better-whitespace'
@@ -72,3 +73,8 @@ map <tab> :call OnTab()<CR>
 
 " Generate code tags
 nmap nd :!cscope -Rqb<CR>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+augroup DetectIndent
+   autocmd!
+   autocmd BufReadPost *  DetectIndent
+augroup END
