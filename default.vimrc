@@ -12,19 +12,19 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-markdown'
 Plugin 'vim-scripts/php.vim-html-enhanced'
 Plugin 'moll/vim-node'
-Plugin 'roryokane/detectindent'
 Plugin 'tpope/vim-git'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/winmanager'
-Plugin 'vim-scripts/minibufexplorerpp'
 Plugin 'vim-scripts/molokai'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'majutsushi/tagbar'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'steffanc/cscopemaps.vim'
+Plugin 'roryokane/detectindent'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'vim-airline/vim-airline'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -42,8 +42,8 @@ set clipboard=unnamed
 set paste
 
 " Better tab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set expandtab
 
 " Syntax
@@ -78,3 +78,6 @@ augroup DetectIndent
    autocmd!
    autocmd BufReadPost *  DetectIndent
 augroup END
+
+nmap q[ :cprev<CR>
+nmap q] :cnext<CR>
