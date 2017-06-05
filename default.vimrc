@@ -26,6 +26,8 @@ Plugin 'steffanc/cscopemaps.vim'
 Plugin 'roryokane/detectindent'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'junkblocker/patchreview-vim'
+Plugin 'matchit.zip'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
