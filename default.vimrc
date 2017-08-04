@@ -73,9 +73,6 @@ function! OnTab()
 endfunction
 map <tab> :call OnTab()<CR>
 
-" Generate code tags
-nmap nd :!cscope -Rqb<CR>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
 augroup DetectIndent
    autocmd!
    autocmd BufReadPost *  DetectIndent
@@ -83,3 +80,4 @@ augroup END
 
 nmap q[ :cprev<CR>
 nmap q] :cnext<CR>
+nmap <C-\>m :!cscope -Rqb<CR>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
