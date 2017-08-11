@@ -4,38 +4,46 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'L9'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'elzr/vim-json'
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-markdown'
-Plugin 'vim-scripts/php.vim-html-enhanced'
-Plugin 'moll/vim-node'
-Plugin 'tpope/vim-git'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/winmanager'
-Plugin 'vim-scripts/molokai'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'majutsushi/tagbar'
-Plugin 'rhysd/vim-clang-format'
-Plugin 'steffanc/cscopemaps.vim'
-Plugin 'roryokane/detectindent'
-Plugin 'vim-scripts/DoxygenToolkit.vim'
-Plugin 'vim-airline/vim-airline'
+Plugin 'Conque-GDB'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'elzr/vim-json'
+Plugin 'godlygeek/tabular'
+Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'junkblocker/patchreview-vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'matchit.zip'
+Plugin 'moll/vim-node'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'pangloss/vim-javascript'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'roryokane/detectindent'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'steffanc/cscopemaps.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-markdown'
+Plugin 'valloric/youcompleteme'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
+Plugin 'vim-scripts/molokai'
+Plugin 'vim-scripts/php.vim-html-enhanced'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-scripts/winmanager'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Customizations
-colorscheme molokai
+" Syntax
+syntax on
 
 " Use dark backgroud theme
 set background=dark
+
+" Customizations
+"colorscheme molokai
+colorscheme solarized
 
 " Share clipboard with OS
 set clipboard=unnamed
@@ -47,9 +55,6 @@ set paste
 set shiftwidth=4
 set tabstop=4
 set expandtab
-
-" Syntax
-syntax on
 
 " Tell bad spaces
 :match Error /\s\+$/
