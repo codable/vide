@@ -86,3 +86,11 @@ augroup END
 nmap q[ :cprev<CR>
 nmap q] :cnext<CR>
 nmap <C-\>m :!cscope -Rqb<CR>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+"for gitgutter
+set updatetime=250
+if exists('&signcolumn')  " Vim 7.4.2201
+  set signcolumn=yes
+else
+  let g:gitgutter_sign_column_always = 1
+endif
