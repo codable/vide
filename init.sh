@@ -5,4 +5,4 @@ ln -sf `pwd`/default.vimrc ~/.vimrc
 sudo apt-get install libclang-dev libboost-regex-dev
 vim +PluginInstall +qa
 cd ~/.vim/bundle/youcompleteme
-./install.py --system-libclang --system-boost
+./install.py --system-libclang --system-boost --clang-completer
